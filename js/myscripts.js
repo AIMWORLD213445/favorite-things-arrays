@@ -64,6 +64,7 @@ $(function(){
     })
     arrayThree.reverse()
     console.log(arrayThree);
+    $("#beginSentence").html(arrayThree.join(space));
 
     // $("#sentenceInput").each(function(){
     //   sentenceInput.push()
