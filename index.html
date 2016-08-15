@@ -10,30 +10,88 @@
     <title>These are a few of my favorite things</title>
   </head>
   <body>
-    <a href="icecream.html">Here is a link to our ice cream favorite flavors!</a>
-    <h1>Favorite Things Survey</h1>
-    <form id="favorites" class="" action="index.html" method="post">
-      <label for="soup">Soup</label>
-      <input type="text" id="soup" name="soup" value="">
-      <label for="movies">Movies</label>
-      <input type="text" name="movies" value="">
-      <label for="song">Song</label>
-      <input type="text" name="song" value="">
-      <label for="show">Television Show</label>
-      <input type="text" name="show" value="">
-      <label for="place">Place to vacation</label>
-      <input type="text" name="place" value="">
-      <label for="politician">Politician</label>
-      <input type="text" name="politician" value="">
-      <label for="radioHost">Radio Personality</label>
-      <input type="text" name="radioHost" value="">
-      <label for="book">Book</label>
-      <input type="text" name="book" value="">
-      <input id="submitButton" class="btn btn-danger btn-lg" type="button" name="Submit" value="Submit">
-    </form>
-    <ul id="results">
-      <li id="beginning"></li>
-    </ul>
+    <div class="jumbotron">
+
+      <h1 class="">Favorite Things!</h1>
+      <a href="icecream.html">Here is a link to our ice cream favorite flavors!</a>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6">
+
+          <h1>Favorite Things Survey</h1>
+          <form id="favorites" class="" action="index.html" method="post">
+            <label for="soup">Soup</label>
+            <input type="text" id="soup" name="soup" value="">
+            <label for="movies">Movies</label>
+            <input type="text" name="movies" value="">
+            <label for="song">Song</label>
+            <input type="text" name="song" value="">
+            <label for="show">Television Show</label>
+            <input type="text" name="show" value="">
+            <label for="place">Place to vacation</label>
+            <input type="text" name="place" value="">
+            <label for="politician">Politician</label>
+            <input type="text" name="politician" value="">
+            <label for="radioHost">Radio Personality</label>
+            <input type="text" name="radioHost" value="">
+            <label for="book">Book</label>
+            <input type="text" name="book" value="">
+            <input id="submitButton" class="btn btn-danger btn-lg" type="button" name="Submit" value="Submit">
+          </form>
+          <ul id="results">
+            <li id="beginning"></li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h2>Ice Cream Flavors!</h2>
+          <ul>
+            <li id="beginIceCream"></li>
+          </ul>
+        </div>
+      </div>
+      <!-- end row 1 -->
+      <div class="row col-sm-12">
+        <div class="col-sm-9">
+        <h2>Grocery Shopping list</h2>
+        <p>Let us rearrange your shopping list in alphabetical order!</p>
+          <form id="groceryInput">
+            <label>Grocery List</label>
+              <input type="text" name="name" value="">
+              <input type="text" name="name" value="">
+              <input type="text" name="name" value="">
+              <input type="text" name="name" value="">
+              <input type="text" name="name" value="">
+          </form>
+          <input type="button" value="submit" id="submitGrocery">
+        </div>
+
+        <div class="col-sm-3">
+          <h3>Here is your alphabetically ordered list!</h3>
+            <ul>
+              <li id="beginGrocery"class=""></li>
+            </ul>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+    <!-- end container -->
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>

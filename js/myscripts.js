@@ -2,7 +2,7 @@ $(function(){
   $("#submitButton").click(function(){
     console.log("hello");
     var favoriteInput =[]
-    $("input").each(function(){
+    $("#favorites input").each(function(){
       favoriteInput.push($(this).val());
       console.log(favoriteInput);
       });
@@ -23,5 +23,35 @@ $(function(){
     $(newFavArray).each(function(){
       $("#beginning").append("<li>" + this  + "</li>");
     });
-  });
-});
+  }); //end submitButton
+  var flavors = ["vanilla", "meyer lemon", "chocolate chip mint", "molasses", "donkey", "coffee", "rainbow sherbert"];
+
+  $(function(){
+    flavors.forEach(function(flavor){
+      $("#beginIceCream").append("<li>"+flavor+"</li>");
+    });
+  }); //end ice cream function
+
+  $("#submitGrocery").click(function(){
+    var groceryInput=[]
+    $("#groceryInput input").each(function(){
+      groceryInput.push($(this).val());
+    })
+    groceryInput.sort();
+    var alphaGrocery = groceryInput.slice();
+
+    var upperCaseArray =[];
+    alphaGrocery.forEach(function(groceryItem){
+      upperCaseArray.push(groceryItem.toUpperCase());
+    });
+    console.log(upperCaseArray)
+
+    $(upperCaseArray).each(function(){
+    $("#beginGrocery").append("<li>" + this  + "</li>");  
+    })
+
+
+  }); //end submit grocery function
+
+
+}); // end of jquery
