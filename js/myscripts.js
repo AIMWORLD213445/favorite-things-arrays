@@ -51,6 +51,7 @@ $(function(){
     })
   }); //end submit grocery function
 
+//sentence scrambler function
   $("#sentenceButton").click(function(){
     var stringedSentence = $("#sentenceInput").val();
     var space= " "
@@ -68,7 +69,7 @@ $(function(){
 
     // $("#sentenceInput").each(function(){
     //   sentenceInput.push()
-     })
+  })// end sentence function
 
 
 
