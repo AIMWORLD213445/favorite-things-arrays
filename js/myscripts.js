@@ -57,12 +57,22 @@ $(function(){
     var space= " "
     var arrayedSentence = stringedSentence.split(space);
     console.log(arrayedSentence);
-    var arrayThree = [];
-    arrayedSentence.forEach(function(word){
-      if(word.length >2){
-        arrayThree.push(word)
-      }
-    })
+    // var arrayThree = [];
+
+
+    // arrayedSentence.forEach(function(word){
+    //   if(word.length >2){
+    //     arrayThree.push(word)
+    //   }
+    // })
+    //produces same effect with array filter method as previous function, returning all words with a length greater than or equal to 3. the "length" property works on both strings and arrays 
+    function isLongEnough(value){
+      return value.length > 2;
+    };
+    var arrayThree = arrayedSentence.filter(isLongEnough);
+
+
+
     arrayThree.reverse()
     console.log(arrayThree);
     $("#beginSentence").html(arrayThree.join(space));
