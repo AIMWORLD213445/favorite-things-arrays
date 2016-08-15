@@ -6,12 +6,34 @@
     <link rel="stylesheet" href="css/mystyles.css" type="text/css">
     <script src="js/jquery-3.1.0.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/myscript.js" type="text/javascript"></script>
-    <title></title>
+    <script src="js/myscripts.js" type="text/javascript"></script>
+    <title>These are a few of my favorite things</title>
   </head>
   <body>
 
-    </div>
+    <h1>Favorite Things Survey</h1>
+    <form id="favorites" class="" action="index.html" method="post">
+      <label for="soup">Soup</label>
+      <input type="text" id="soup" name="soup" value="">
+      <label for="movies">Movies</label>
+      <input type="text" name="movies" value="">
+      <label for="song">Song</label>
+      <input type="text" name="song" value="">
+      <label for="show">Television Show</label>
+      <input type="text" name="show" value="">
+      <label for="place">Place to vacation</label>
+      <input type="text" name="place" value="">
+      <label for="politician">Politician</label>
+      <input type="text" name="politician" value="">
+      <label for="radioHost">Radio Personality</label>
+      <input type="text" name="radioHost" value="">
+      <label for="book">Book</label>
+      <input type="text" name="book" value="">
+      <input id="submitButton" class="btn btn-danger btn-lg" type="button" name="Submit" value="Submit">
+    </form>
+    <ul id="results">
+      <li id="beginning"></li>
+    </ul>
 
   </body>
 </html>
