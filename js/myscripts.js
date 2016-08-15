@@ -47,11 +47,30 @@ $(function(){
     console.log(upperCaseArray)
 
     $(upperCaseArray).each(function(){
-    $("#beginGrocery").append("<li>" + this  + "</li>");  
+    $("#beginGrocery").append("<li>" + this  + "</li>");
     })
-
-
   }); //end submit grocery function
+
+  $("#sentenceButton").click(function(){
+    var stringedSentence = $("#sentenceInput").val();
+    var space= " "
+    var arrayedSentence = stringedSentence.split(space);
+    console.log(arrayedSentence);
+    var arrayThree = [];
+    arrayedSentence.forEach(function(word){
+      if(word.length >2){
+        arrayThree.push(word)
+      }
+    })
+    arrayThree.reverse()
+    console.log(arrayThree);
+
+    // $("#sentenceInput").each(function(){
+    //   sentenceInput.push()
+     })
+
+
+
 
 
 }); // end of jquery
